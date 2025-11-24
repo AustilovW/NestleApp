@@ -1,0 +1,32 @@
+/* App.css — Nestlé · Despensa inteligente
+   Nota: casi todo el diseño viene de las clases Tailwind en App.tsx.
+   Aquí solo dejamos un layout básico para que el root se vea bien centrado.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #fff1f2, #ffffff, #f8fafc); /* similar al bg de la app */
+}
+
+/* El root ocupa toda la altura y centra el contenido,
+   pero dejamos que Tailwind se encargue del resto. */
+#root {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* No usamos .logo, .card, etc. en esta app, así que las eliminamos.
+   Si más adelante necesitas estilos específicos, los agregamos aquí. */
