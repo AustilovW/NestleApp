@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.app-header {
+    background-color: #1a237e;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.quota-section h2 {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.quota-card {
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 24px rgba(26, 35, 126, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.quota-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.quota-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.quota-currency {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+.quota-details {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.detail-value {
+    font-weight: 600;
+    color: #1a237e;
+}
+
+.progress-container {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50 0%, #66bb6a 100%);
+    border-radius: 6px;
+    transition: width 0.5s ease-in-out;
+    width: 0%;
+}
+
+.progress-fill.warning {
+    background: linear-gradient(90deg, #ff9800 0%, #ffb74d 100%);
+}
+
+.progress-fill.danger {
+    background: linear-gradient(90deg, #f44336 0%, #ef5350 100%);
+}
+
+.progress-label {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.refresh-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.refresh-button:hover {
+    background-color: #283593;
+}
+
+.refresh-button:active {
+    transform: scale(0.98);
+}
+
+.app-footer {
+    text-align: center;
+    padding: 1rem;
+    color: #999;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        max-width: 100%;
+    }
+    
+    .quota-amount {
+        font-size: 2rem;
+    }
+}
