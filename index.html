@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestleApp - Mi Cuota Disponible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>NestleApp</h1>
+        </header>
+        
+        <main class="main-content">
+            <section class="quota-section">
+                <h2>Mi Cuota Disponible</h2>
+                
+                <div class="quota-card">
+                    <div class="quota-label">Cuota Disponible</div>
+                    <div class="quota-amount" id="available-quota">$0.00</div>
+                    <div class="quota-currency">MXN</div>
+                </div>
+                
+                <div class="quota-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Cuota Total:</span>
+                        <span class="detail-value" id="total-quota">$0.00</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Cuota Utilizada:</span>
+                        <span class="detail-value" id="used-quota">$0.00</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Fecha de Corte:</span>
+                        <span class="detail-value" id="cut-date">--/--/----</span>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quota-progress"></div>
+                    </div>
+                    <div class="progress-label" id="usage-percentage">0% utilizado</div>
+                </div>
+                
+                <button class="refresh-button" id="refresh-btn">
+                    Actualizar Cuota
+                </button>
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <p>&copy; 2025 NestleApp - Maqueta</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
